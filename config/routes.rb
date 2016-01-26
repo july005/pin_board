@@ -5,8 +5,6 @@ Rails.application.routes.draw do
   		put "like", to: "pins#upvote"
   	end
   end
-
-
-
-  root "pins#index"
+  get "/pages/:page" => "pages#show"
+	root "pages#show", page: "home"
 end

@@ -17,21 +17,61 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url(https://fonts.googleapis.com/css?family=Allerta+Stencil);
 
 body {
-	background: #E9E9E9;
+	height: 100%;
+  background-image: url("background1.jpg");
+  background-size: 100%;
+  font-family: 'Lato', sans-serif;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 100;
+}
+
+h1 {
+
+
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+#bootstrap-overrides h1 { 
+  line-height: 3;
+  color: white;
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 270px;
+  text-align: center;
+	font-weight: bold;
+}
+
+.home {
+  font-color: black;
 }
 
 nav {
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
 	.navbar-brand {
 		a {
-			color: #BD1E23;
+			color: #EF597B;
 			font-weight: bold;
+			font-size: 27px;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	.navbar-signs {
+		a {
+			color: #EF597B;
+			font-weight: bold;
+			font-size: 20px;
 			&:hover {
 				text-decoration: none;
 			}
@@ -53,7 +93,7 @@ nav {
 	  	height: auto;
 	  }
 	  h2 {
-	  	font-size: 22px;
+	  	font-size: 26px;
 	  	margin: 0;
 	  	padding: 25px 10px;
 	  	a {
@@ -80,7 +120,7 @@ nav {
 
 #pin_show {
 	.panel-heading {
-		padding: 0;
+		padding: 50px;
 	}
 	.pin_image {
 		img {
